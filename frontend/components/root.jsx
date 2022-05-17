@@ -9,7 +9,9 @@ class Root extends React.Component {
     }
 
     render() {
-        <App></App>
+        return (
+            <App> </App>
+        )
     }
 
     
