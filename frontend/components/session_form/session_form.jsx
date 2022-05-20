@@ -30,12 +30,23 @@ class SessionForm extends React.Component {
         );
     }
     render() {
+
+        if (this.props.formType === 'signup') {
+            this.displayNav = <div> {this.props.navLink} </div>
+        }
+        else {
+            this.displayNav = <div>Need an account? {this.props.navLink} </div>
+        }
+
+        
+
         return (
         <div className="login-form-container">
             <form onSubmit={this.handleSubmit} className="login-form-box">
             Welcome to BasedCord!
             <br/>
-            Please {this.props.formType} or {this.props.navLink}
+            
+            {this.displayNav}
             {this.renderErrors()}
             <div className="login-form">
                 <br/>
@@ -45,6 +56,7 @@ class SessionForm extends React.Component {
                     onChange={this.update('email')}
                     className="login-input"
                 />
+                <br/>
                 </label>
                 <label>Username:
                 <input type="text"

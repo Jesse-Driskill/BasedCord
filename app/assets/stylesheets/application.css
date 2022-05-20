@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+.login-form {
+    background-color: #36393f;
+    margin: auto;
+    max-width: 400px;
+    max-height: 340px;
+    width: 50%;
+    height: 50%;
+    border-radius: 7px;
+    padding: 32px;
+    transform: translate(0%, 40%);
+}
