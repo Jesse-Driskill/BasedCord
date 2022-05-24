@@ -37,13 +37,9 @@ import GreetingContainer from './greeting/greeting_container';
 
 const App = () => (
     <div>
-        <header>
-            <Link to="/" className="header-link">
-                <h1>BasedCord</h1>
-            </Link>
-            <GreetingContainer/>
-        </header>
+        
         <Switch>
+            <AuthRoute exact path="/" component={GreetingContainer}/> 
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
         </Switch>

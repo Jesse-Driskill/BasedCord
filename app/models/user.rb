@@ -5,6 +5,10 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_session_token
 
+    has_many :Servers,
+    foreign_key: :owner_id,
+    class_name: :Server
+
     def self.find_by_credentials(username, password)
         user=User.find_by(username: username)
         if user && BCrypt::Password.new(user.password_digest).is_password?(password)

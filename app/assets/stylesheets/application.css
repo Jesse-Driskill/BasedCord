@@ -16,6 +16,11 @@
 
 
 
+div {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
 .login-form {
     background-color: #36393f;
     margin: auto;
@@ -26,4 +31,311 @@
     border-radius: 7px;
     padding: 32px;
     transform: translate(0%, 40%);
+}
+
+
+
+.navlink {
+    width: 300px;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #404eed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+
+#gsec1 {
+    width: 100%;
+    height: 600px;
+    background-image: url('https://cdn.discordapp.com/attachments/235212777545924608/977757365828989018/DiscordImg1.png');
+    color: white;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    text-align: center;
+
+}
+
+#gsec1h {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Ginto Nord", Arial, Helvetica, sans-serif;
+}
+
+#gsec1p {
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 20px;
+    width: 50%;
+    text-align: center;
+
+}
+
+
+#gsec2 {
+    margin-top: 120px;
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    padding: 100px;
+}
+
+#welcomelogin {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#gsec2text {
+    width: 35%;
+}
+
+#gsec2h {
+    color: black;
+    font-weight: bolder;
+    font-size: 48px;
+    font-family: "Ginto Normal";
+    padding-bottom: 25px;
+}
+
+#gsec2p {
+    font-size: 20px;
+}
+
+#couchguy {
+    margin-left: 20px;
+    content: url('https://cdn.discordapp.com/attachments/930184879486943252/978088117921787955/CouchGuy4.png')
+}
+
+#slurpimg {
+    content: url('https://cdn.discordapp.com/attachments/930184879486943252/978106497932361768/Slurp2.png');
+}
+
+#pawn {
+    content: url('https://cdn.discordapp.com/attachments/930184879486943252/978108736226869248/unknown.png')
+}
+
+#gsec3 {
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+    height: 600px;
+    padding: 100px;
+}
+
+
+
+#navbar > div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+#gsec3text {
+    width: 35%;
+}
+#gsec3h {
+    color: black;
+    font-weight: bolder;
+    font-size: 48px;
+    font-family: "Ginto Normal";
+    padding-bottom: 25px;
+}
+
+#gsec3p {
+    font-size: 20px;
+}
+
+#gsec4 {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    padding: 100px;
+}
+
+#gsec4h {
+    color: black;
+    font-weight: bolder;
+    font-size: 48px;
+    font-family: "Ginto Normal";
+    padding-bottom: 25px;
+}
+
+#gsec4p {
+    font-size: 20px;
+}
+
+#gsec4text {
+    padding: 59px;
+    width: 35%;
+}
+
+#gsec5 {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    padding: 100px;
+}
+
+#gsec5text {
+    padding: 59px;
+    width: 35%;
+}
+
+#gsec5h {
+    color: black;
+    font-weight: bolder;
+    font-size: 48px;
+    font-family: "Ginto Normal";
+    padding-bottom: 25px;
+}
+
+#gsec5p {
+    font-size: 20px;
+}
+
+#journeydiv {
+    height: 100%;
+    width: 90%;
+    min-height: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+#journey {
+    content: url('https://cdn.discordapp.com/attachments/930184879486943252/978145706722353222/unknown.png')
+}
+
+#footer {
+    height: 30%;
+    min-height: 400px;
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #23272a;
+    color: white;
+}
+#footersec1 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    
+}
+
+#journeyheader {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    padding-bottom: 50px;
+    font-family: "Ginto Normal";
+}
+
+#signupbuttonbottom {
+    background-color: #5865F2;
+    color: white;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 40px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 270px;
+}
+
+#loginformroot {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/attachments/930184879486943252/978172439580266587/BigPizza.png');
+}
+
+#loginformheader {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    text-align: center;
+    font-family: "Ginto";
+}
+
+#loginformsubtext {
+    color: lightgrey;
+    font-size: 16px;
+    text-align: center;
+}
+
+.forminputheader {
+    color: white;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    font-family: "Ginto";
+    font-weight: 500;
+}
+
+.login-input {
+    border: 0.75px solid #202225;
+    background-color: #202225;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.forminputdiv {
+    font-size: 12px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    font-family: "Ginto";
+    font-weight: 500;
+    color: white;
+}
+
+.session-form-header {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    text-align: center;
+    font-family: "Ginto";
+}
+
+#session-form-header-subtext {
+    color: lightgrey;
+    font-size: 16px;
+    text-align: center;
+}
+
+#sessionbutton {
+    text-align: center;
+    width: 100%;
+    background-color: #5865F2;
+    border: 0.75px solid #5865F2;
+    border-radius: 3px;
+    color: white;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
