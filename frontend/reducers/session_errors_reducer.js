@@ -1,20 +1,21 @@
-import {
-    RECEIVE_SESSION_ERRORS,
-    RECEIVE_CURRENT_USER,
-} from '../actions/session_actions';
+import { RECEIVE_CURRENT_USER, RECEIVE_SESSION_ERRORS, REMOVE_SESSION_ERRORS } from "../actions/session_actions";
 
-export default (state = [], action) => {
+const sessionErrorsReducer = (state = [], action) => {
     Object.freeze(state);
+    let newState = Object.assign({}, state);
     switch (action.type) {
-    case RECEIVE_SESSION_ERRORS:
-        if (action.errors === undefined) {
-            return [];
-        }
-        return action.errors;
-    case RECEIVE_CURRENT_USER:
-        return [];
-    default:
-        return state;
+        case RECEIVE_SESSION_ERRORS:
+            newState = action.errors;
+            return newState;
+        case RECEIVE_CURRENT_USER:
+            newState = [];
+            return newState;
+        case REMOVE_SESSION_ERRORS:
+            newState = [];
+            return newState;
+        default:
+            return state;
     }
-};
-    
+}
+
+export default sessionErrorsReducer;

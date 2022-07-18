@@ -3,10 +3,12 @@ class SessionForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+        email: '',
         username: '',
         password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoLogin = this.demoLogin.bind(this);
     }
     update(field) {
         return e => this.setState({
@@ -29,6 +31,18 @@ class SessionForm extends React.Component {
         </ul>
         );
     }
+
+    componentWillUnmount() {
+        this.props.removeErrors();
+    }
+
+    demoLogin(e) {
+        e.preventDefault();
+        this.props.processForm({
+            username: 'JohnDoe', email: 'JohnDoe@gmail.com', password: 'password'
+        })
+    }
+
     render() {
 
         if (this.props.formType === 'signup') {
@@ -38,7 +52,9 @@ class SessionForm extends React.Component {
                                 </div>
         }
         else {
-            this.displayNav = <div id='login-to-register'>Need an account? {this.props.navLink} </div>
+            this.displayNav =   <div>
+                                    <div id='login-to-register'>Need an account? {this.props.navLink} </div>
+                                </div>
             this.formHeader = <div id='session-form-head-text'>
                                     <h2 className='session-form-header'>Welcome Back!</h2>
                                     <div id='session-form-header-subtext'>We're so excited to see you again!</div>
@@ -50,14 +66,13 @@ class SessionForm extends React.Component {
         return (
         <div className="login-form-container" id='loginformroot'>
             <form onSubmit={this.handleSubmit} className="login-form-box">
-            Welcome to BasedCord!
             <br/>
             
             
             {this.renderErrors()}
                 <div className="login-form" id='loginform'>
                     {this.formHeader}
-                    <br/>
+                    
 
                     <div className='forminputdiv'>Email:</div>
                     <label className='forminputheader'>
@@ -86,7 +101,9 @@ class SessionForm extends React.Component {
                     />
                     </label>
                     <br/>
-                    <input className="session-submit" id='sessionbutton' type="submit" value={this.props.formType} />
+                    <input className="discordbutton" id='sessionbutton' type="submit" value={this.props.formType} />
+
+                    <button className="discordbutton" onClick={this.demoLogin} id='demologinbutton'>DEMO LOGIN</button>
                     {this.displayNav}
                 </div>
             </form>

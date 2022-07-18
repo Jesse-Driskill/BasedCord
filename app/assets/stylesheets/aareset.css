@@ -55,24 +55,25 @@ input {
 
 
 @font-face {
-	font-family: "Ginto Nord";
-	src: asset-url("GintoNord.otf");
+    font-family: "Ginto Nord";
+    src: url('GintoNord.ttf');
 }
 
 @font-face {
-	font-family: "Whitney";
-	src: asset-url("WhitneyMedium.otf")
+    font-family: "Whitney";
+    src: url("WhitneyMedium.ttf");
 }
 
 @font-face{
-	font-family: "Ginto Normal";
-	src: asset-url("GintoNormal.otf")
+    font-family: "Ginto Normal";
+    src: url("GintoNormal.ttf");
 }
 
 @font-face{
-	font-family: "Ginto";
-	src: asset-url("GitnoMedium.otf")
+    font-family: "Ginto";
+    src: url("GintoMedium.ttf");
 }
+
 
 * {
 	font-family: "Whitney", Helvetica, Arial, sans-serif;

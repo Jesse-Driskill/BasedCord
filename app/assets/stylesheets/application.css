@@ -13,11 +13,31 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+    font-family: "Ginto Nord";
+    src: asset-url('../fonts/GintoNord.ttf');
+}
+
+@font-face {
+    font-family: "Whitney";
+    src: asset-url("../fonts/WhitneyMedium.ttf");
+}
+
+@font-face{
+    font-family: "Ginto Normal";
+    src: asset-url("../fonts/GintoNormal.ttf");
+}
+
+@font-face{
+    font-family: "Ginto";
+    src: asset-url("../fonts/GintoMedium.ttf");
+}
+
 
 
 
 div {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Ginto Nord';
 }
 
 
@@ -30,6 +50,7 @@ div {
     height: 50%;
     border-radius: 7px;
     padding: 32px;
+    padding-bottom: 94px;
     transform: translate(0%, 40%);
 }
 
@@ -42,7 +63,7 @@ div {
 #navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #404eed;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -322,12 +343,13 @@ div {
 }
 
 #session-form-header-subtext {
-    color: lightgrey;
+    color: rgba(211, 211, 211, 0.76);
     font-size: 16px;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#sessionbutton {
+.discordbutton {
     text-align: center;
     width: 100%;
     background-color: #5865F2;
@@ -339,3 +361,56 @@ div {
     margin-bottom: 5px;
     cursor: pointer;
 }
+
+#discord-logo {
+    height: 25px;
+    width: 35px;
+    content: url('https://cdn.discordapp.com/attachments/930184879486943252/978705861448986664/unknown.png');
+}
+
+#logo-container {
+    display: flex;
+    
+}
+
+#basedcord-title {
+    font-size: 16px;
+    padding: 2px;
+    margin-left: 6px;
+}
+
+#main-navs {
+    display: flex;
+}
+
+#register-to-login {
+    font-size: 14px;
+    text-decoration: none;
+    color: #00AFF4;
+}
+
+#server-create-form {
+    border: 1px solid;
+}
+
+#login-to-register {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #00AFF4;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(0, 162, 255); 
+}
+
+

@@ -5,9 +5,18 @@ class User < ApplicationRecord
     attr_reader :password
     after_initialize :ensure_session_token
 
-    has_many :Servers,
+    has_many :owned_servers,
     foreign_key: :owner_id,
     class_name: :Server
+
+    has_many :server_memberships,
+    foreign_key: :member_id, 
+    class_name: :ServerMembership,
+    dependent: :destroy
+
+    has_many :servers,
+    through: :server_memberships, 
+    source: :server
 
     def self.find_by_credentials(username, password)
         user=User.find_by(username: username)

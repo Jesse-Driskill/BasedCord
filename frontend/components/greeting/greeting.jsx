@@ -1,26 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
-// const Greeting = ({ currentUser, logout }) => {
-//   const sessionLinks = () => (
-//     <nav className="login-signup">
-//       <Link to="/login">Login</Link>
-//       &nbsp;or&nbsp;
-//       <Link to="/signup">Sign up!</Link>
-//     </nav>
-//   );
-//   const personalGreeting = () => (
-    // <hgroup className="header-group">
-    //   <h2 className="header-name">Hi, {currentUser.username}!</h2>
-    //   <button className="header-button" onClick={logout}>Log Out</button>
-    // </hgroup>
-//   );
-
-//   return currentUser ? personalGreeting() : sessionLinks();
-// };
-
 class Greeting extends React.Component {
   constructor(props) {
     super(props);
@@ -36,10 +16,19 @@ class Greeting extends React.Component {
           
           <nav id='navbar'>
 
+            <div id='logo-container'>
+            <img id='discord-logo'></img>
+            <div id='basedcord-title'>BasedCord</div>
+            </div>
+
+            <div id='main-navs'>
             <div className='navlink'>GitHub</div>
             <div className='navlink'>Portfolio</div>
+            </div>
 
+            <div id='login-button-container'>
             <Link to="/login" id="welcomelogin">Login</Link>
+            </div>
           </nav>
             <h2 id='gsec1h'>IMAGINE A PLACE...</h2>
             <div id='gsec1p'>
